@@ -93,7 +93,7 @@ function checkCarrier(phoneNumber) {
 // Update the carrier icon based on the detected carrier
 function updateCarrierIcon(detectedCarrier) {
   if (detectedCarrier !== "Invalid Carrier") {
-    carrierIconEl.innerHTML = `<img src="./images/${detectedCarrier.toLowerCase()}.jpg" alt="${detectedCarrier.toLowerCase()} Icon" width="50px" />`;
+    carrierIconEl.innerHTML = `<img src="./images/${detectedCarrier.toLowerCase()}.png" alt="${detectedCarrier.toLowerCase()} Icon" width="50px" />`;
   } else {
     carrierIconEl.innerHTML = "Invalid Carrier";
   }
