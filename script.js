@@ -49,7 +49,7 @@ function checkNumInputStyle() {
   // Check the carrier based on pattern or prefixes
   if (phoneNumber.length === 14) {
     if (carrier) {
-        checkPatternCarrier(phoneNumber, pattern);
+        checkPatternCarrier(phoneNumber, carrier);
     } else {
         checkCarrier(phoneNumber);
     }
