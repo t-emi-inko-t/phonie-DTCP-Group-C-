@@ -54,12 +54,9 @@ The JavaScript file contains the functionality for determining the carrier based
 
 The CSS file provides the styling for the web page, including the appearance of the input box and carrier icons.
 
-## Contributing
+## Contributors
+##### Simeon A. Mustapha: Github - https://github.com/Donsimeone2206 Slack - @simeon
 
 If you would like to contribute to this project, feel free to submit pull requests or open issues on the project's GitHub repository.
-
-## License
-
-This project is under an open-source license. For details, please refer to the LICENSE file.
 
 Thank you for using "phonie-DTCP-Group-C"! We hope you find it helpful for identifying phone carriers in Nigeria.
