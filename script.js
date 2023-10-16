@@ -53,7 +53,7 @@ function checkNumInputStyle() {
     } else {
         checkCarrier(phoneNumber);
     }
-  } else if (phoneNumber.length > 1 && phoneNumber.length < 14) {
+  } else if (phoneNumber.length > 0 && phoneNumber.length < 14) {
     updateCarrierIcon("loading");
   } else {
     updateCarrierIcon("Invalid Number");
