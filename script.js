@@ -54,14 +54,14 @@ function checkNumInputStyle() {
         checkCarrier(phoneNumber);
     }
   } else {
-    updateCarrierIcon("Invalid Carrier");
+    updateCarrierIcon("Invalid Number");
   }
 
 }
 
 // Check the carrier based on a specified pattern
 function checkPatternCarrier(phoneNumber, carrier) {
-  let detectedCarrier = "Invalid Carrier";
+  let detectedCarrier = "Unknown Carrier";
   let isCarrier = carrierPrefixes[carrier.toUpperCase()].some((prefix) =>
     phoneNumber.startsWith(prefix)
   );
@@ -75,7 +75,7 @@ function checkPatternCarrier(phoneNumber, carrier) {
 
 // Check the carrier based on prefixes
 function checkCarrier(phoneNumber) {
-  let detectedCarrier = "Invalid Carrier";
+  let detectedCarrier = "Unknown Carrier";
 
   // Iterate through carrier prefixes and check for a match
   for (const carrier in carrierPrefixes) {
@@ -92,9 +92,11 @@ function checkCarrier(phoneNumber) {
 
 // Update the carrier icon based on the detected carrier
 function updateCarrierIcon(detectedCarrier) {
-  if (detectedCarrier !== "Invalid Carrier") {
+  if (detectedCarrier == "Unknown Carrier") {
+    carrierIconEl.innerHTML = "Unknown Carrier";
+  } else if (detectedCarrier == "Unknown Number") {
+    carrierIconEl.innerHTML = "Unknown Number";
+  }else{
     carrierIconEl.innerHTML = `<img src="./images/${detectedCarrier.toLowerCase()}.jpg" alt="${detectedCarrier.toLowerCase()} Icon" width="50px" />`;
-  } else {
-    carrierIconEl.innerHTML = "Invalid Carrier";
   }
 }
