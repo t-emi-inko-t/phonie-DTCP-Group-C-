@@ -53,10 +53,11 @@ function checkNumInputStyle() {
     } else {
         checkCarrier(phoneNumber);
     }
+  } else if (phoneNumber.length > 1 && phoneNumber.length < 14) {
+    updateCarrierIcon("loading");
   } else {
     updateCarrierIcon("Invalid Number");
   }
-
 }
 
 // Check the carrier based on a specified pattern
@@ -96,7 +97,9 @@ function updateCarrierIcon(detectedCarrier) {
     carrierIconEl.innerHTML = "Unknown Carrier";
   } else if (detectedCarrier == "Invalid Number") {
     carrierIconEl.innerHTML = "Invalid Number";
-  }else{
+  } else if (detectedCarrier == "loading") {
+    carrierIconEl.innerHTML = `<img src="./images/loading.gif" alt="loading Icon" width="50px" />`;
+  } else {
     carrierIconEl.innerHTML = `<img src="./images/${detectedCarrier.toLowerCase()}.jpg" alt="${detectedCarrier.toLowerCase()} Icon" width="50px" />`;
   }
 }
