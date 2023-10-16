@@ -62,8 +62,6 @@ The CSS file provides the styling for the web page, including the appearance of 
 ##### 5. Aishat Adeladun Adewoyin: Github: https://github.com/Aishat452 slack: @Aisha
 ##### 6. Aremu Japheth GitHub:https://github.com/Airydev001 slack: @aremu japheth
 ##### 7. Maryann uba: https://github.com/Ebymaryann Slack:@Maryann uba
-##### 8. Ayodele Alayemi: GitHub:https://gitHub.com/dorteks Slack: @Doteks
-##### 9. 
-##### 10. 
-
-Thank you for using "phonie-DTCP-Group-C"! We hope you find it helpful for identifying phone carriers in Nigeria.
+##### 8. Ayodele Alayemi: GitHub:https://gitHub.com/dorteks Slack: @Dorteks
+##### 9. Abah Grace Ojochenemi: GitHub - https://github.com/Grace-Abah Slack: @Grace
+##### 10. Ferdinard James: https://github.com/Ferdinard01 Slack: @Ferdinard
