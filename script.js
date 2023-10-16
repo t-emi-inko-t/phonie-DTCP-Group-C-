@@ -94,8 +94,8 @@ function checkCarrier(phoneNumber) {
 function updateCarrierIcon(detectedCarrier) {
   if (detectedCarrier == "Unknown Carrier") {
     carrierIconEl.innerHTML = "Unknown Carrier";
-  } else if (detectedCarrier == "Unknown Number") {
-    carrierIconEl.innerHTML = "Unknown Number";
+  } else if (detectedCarrier == "Invalid Number") {
+    carrierIconEl.innerHTML = "Invalid Number";
   }else{
     carrierIconEl.innerHTML = `<img src="./images/${detectedCarrier.toLowerCase()}.jpg" alt="${detectedCarrier.toLowerCase()} Icon" width="50px" />`;
   }
