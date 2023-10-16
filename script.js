@@ -34,7 +34,7 @@ const carrierPrefixes = {
 };
 
 // Listen for changes in the input and invoke checkCarrier
-phoneNumberEl.addEventListener("change", checkNumInputStyle);
+phoneNumberEl.addEventListener("input", checkNumInputStyle);
 
 // Declare a function to check the carrier based on input
 function checkNumInputStyle() {
